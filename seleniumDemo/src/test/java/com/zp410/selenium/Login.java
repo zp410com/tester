@@ -4,8 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Login {
 
@@ -16,43 +18,97 @@ public class Login {
 //		String url1 = "https://www.imooc.com/user/newlogin/from_url";
         String url2 = "https://www.imooc.com/";
         driver.get(url2);
+        driver.findElement(By.id("js-signin-btn")).click();
     }
 
-    public void loginScript() throws Exception{
-        driver.findElement(By.id("js-signin-btn")).click();
-        Thread.sleep(2000);
+    public void loginScript(String username,String pwd) throws Exception {
 
-        WebElement user = driver.findElement(By.name("email"));
+
+        Thread.sleep(2000);
+        WebElement user = this.element(this.byStr("username"));
         user.isDisplayed();
 
-        WebElement password = driver.findElement(By.name("password"));
+
+        WebElement password = this.element(this.byStr("userpwd"));
         password.isDisplayed();
 
-        WebElement loginButton = driver.findElement(By.className("xa-login"));
+        WebElement loginButton = this.element(this.byStr("loginButton"));
         loginButton.isDisplayed();
 
-        user.sendKeys("18844996590");
-        password.sendKeys("19951108ZXZzxz");
+        user.sendKeys(username);
+        password.sendKeys(pwd);
         //点击登陆
         loginButton.click();
         Thread.sleep(3000);
 
-        WebElement header = driver.findElement(By.id("header-avator"));
+        WebElement header = this.element(this.byStr("header"));
         header.isDisplayed();
 
         Actions actions = new Actions(driver);
         actions.moveToElement(header).perform();
 
-        String userInfo = driver.findElement(By.className("name")).getText();
+        String userInfo = this.element(this.byStr("userInfo")).getText();
         System.out.println(userInfo);
     }
 
+    /**
+     * 封装By
+     */
 
-    public static void main (String[] args) throws Exception{
+    public By byStr(String elementName) {
 
-        Login sele = new Login();
-        sele.init();
-        sele.loginScript();
+        ProUtil properties = new ProUtil("element.properties");
+        String locator = properties.getPro(elementName);
+        //定位方式
+        String locatorType = locator.split(">")[0];
+        //定位值
+        String localtorValue = locator.split(">")[1];
+
+        if (locatorType.equals("id")) {
+            return By.id(localtorValue);
+
+        } else if (locatorType.equals("name")) {
+            return By.name(localtorValue);
+
+        } else if (locatorType.equals("className")) {
+            return By.className(localtorValue);
+
+        } else {
+            return By.xpath(localtorValue);
+        }
+
+    }
+
+    /**
+     * 封装登陆信息
+     */
+    public List<String> loginInfo(){
+        List<String> infos = new ArrayList();
+        ProUtil info = new ProUtil("element.properties");
+        String userN = info.getPro("user");
+        String pwd = info.getPro("pwd");
+        infos.add(userN);
+        infos.add(pwd);
+        return infos;
+    }
+
+
+    /**
+     * 封装Element
+     */
+
+    public WebElement element(By by) {
+        WebElement ele = driver.findElement(by);
+        return ele;
+    }
+
+
+    public static void main(String[] args) throws Exception {
+
+        Login login = new Login();
+        login.init();
+        List<String> strings = login.loginInfo();
+        login.loginScript(strings.get(0),strings.get(1));
 
 
     }
