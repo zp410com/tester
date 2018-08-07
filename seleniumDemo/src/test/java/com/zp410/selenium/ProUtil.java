@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * 读取文件工具类
+ */
 public class ProUtil {
     private Properties prop;
     private String filePath;

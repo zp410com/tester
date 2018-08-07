@@ -1,17 +1,15 @@
 package com.zp410.selenium;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
+import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Login {
 
-    WebDriver driver;
+public class loginTest extends baseDriver {
+
 
     public void init() {
         driver = new ChromeDriver();
@@ -21,7 +19,7 @@ public class Login {
         driver.findElement(By.id("js-signin-btn")).click();
     }
 
-    public void loginScript(String username,String pwd) throws Exception {
+    public void loginScript(String username, String pwd) throws Exception {
 
 
         Thread.sleep(2000);
@@ -37,6 +35,7 @@ public class Login {
 
         user.sendKeys(username);
         password.sendKeys(pwd);
+
         //点击登陆
         loginButton.click();
         Thread.sleep(3000);
@@ -49,6 +48,9 @@ public class Login {
 
         String userInfo = this.element(this.byStr("userInfo")).getText();
         System.out.println(userInfo);
+        if (userInfo.equals("慕仙2111511")) {
+            this.takeScreenShot();
+        }
     }
 
     /**
@@ -82,7 +84,7 @@ public class Login {
     /**
      * 封装登陆信息
      */
-    public List<String> loginInfo(){
+    public List<String> loginInfo() {
         List<String> infos = new ArrayList();
         ProUtil info = new ProUtil("element.properties");
         String userN = info.getPro("user");
@@ -103,15 +105,13 @@ public class Login {
     }
 
 
-    public static void main(String[] args) throws Exception {
+    @Test
+    public void logininpage() throws Exception {
 
-        Login login = new Login();
-        login.init();
-        List<String> strings = login.loginInfo();
-        login.loginScript(strings.get(0),strings.get(1));
-
+        this.init();
+        List<String> strings = this.loginInfo();
+        this.loginScript(strings.get(0), strings.get(1));
 
     }
-
 
 }
