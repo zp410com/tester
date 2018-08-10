@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/zhangxianzhao/Documents/tester/seleniumDemo">
+    <test  name="login" verbose="2" preserve-order="true">
         <classes>
-            <class name="com.zp410.selenium.Login"/>
+            <class name="com.zp410.selenium.testCase.login"/>
         </classes>
     </test>
 </suite>

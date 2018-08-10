@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="seleniumDemo" basedir="." default="transform">
+    <property name="lib.dir" value="lib"/>
+    <path id="test.classpath">
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+    </path>
+    <target name="transform">
+        <delete dir="TestReport"/>
+        <echo message="删除文件"/>
+        <xslt in="/Users/zhangxianzhao/Documents/tester/seleniumDemo/test-output/testng-results.xml"
+              style="/Users/zhangxianzhao/Documents/tester/seleniumDemo/test-output/testng-results.xsl"
+              out="/Users/zhangxianzhao/Documents/tester/seleniumDemo/test-output/TestReport/index.html">
+            <param name="testNgXslt.outputDir"
+                   expression="/Users/zhangxianzhao/Documents/tester/seleniumDemo/test-output/TestReport"/>
+            <classpath refid="test.classpath"/>
+        </xslt>
+    </target>
+</project>

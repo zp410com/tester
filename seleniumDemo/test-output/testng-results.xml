@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="8382" started-at="2018-08-10T03:14:15Z" finished-at="2018-08-10T03:14:23Z">
+    <groups>
+    </groups>
+    <test name="login" duration-ms="8382" started-at="2018-08-10T03:14:15Z" finished-at="2018-08-10T03:14:23Z">
+      <class name="com.zp410.selenium.testCase.login">
+        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.zp410.selenium.testCase.login@532a02d9]" name="getLoginHome" duration-ms="7701" started-at="2018-08-10T11:14:15Z" finished-at="2018-08-10T11:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoginHome -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.zp410.selenium.testCase.login@532a02d9]" name="testLogin" duration-ms="598" started-at="2018-08-10T11:14:23Z" depends-on-methods="com.zp410.selenium.testCase.login.getLoginHome" finished-at="2018-08-10T11:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- com.zp410.selenium.testCase.login -->
+    </test> <!-- login -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
