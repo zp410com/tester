@@ -7,6 +7,9 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+/**
+ * 登陆
+ */
 public class login extends CaseBase {
 
     public DriverBase driver;
