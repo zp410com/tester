@@ -40,4 +40,12 @@ public class DriverBase {
     public void get(String url){
         driver.get(url);
     }
+
+    /**
+     * 返回上一步
+     */
+
+    public void back(){
+        driver.navigate().back();
+    }
 }

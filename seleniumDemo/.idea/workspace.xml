@@ -15,7 +15,7 @@
       <file leaf-file-name="SelectDriver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/base/SelectDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="247">
               <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -24,23 +24,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/login.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testCourseList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testCourseList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/testCourseList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="251">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1088#1096#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DriverBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/base/DriverBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="47" column="20" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,11 +89,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/zp410/selenium/handle/loginPageHandle.java" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/zp410/selenium/base/DriverBase.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/element.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zp410/selenium/base/DriverBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/testCourseList.java" />
       </list>
     </option>
@@ -98,9 +114,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -114,6 +131,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,7 +165,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testCase" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="seleniumDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -154,25 +174,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testCase" type="462c0819:PsiDirectoryNode" />
-              <item name="CaseBase" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="seleniumDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="seleniumDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testCase" type="462c0819:PsiDirectoryNode" />
-              <item name="testCourseList" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="seleniumDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="seleniumDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testCase" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="seleniumDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -182,9 +183,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml">
+  <component name="RunManager" selected="TestNG.testCourseList.CourseList">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zp410.selenium.Login" />
       <module name="seleniumDemo" />
@@ -380,15 +378,46 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="testCourseList.CourseList" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zp410.selenium.testCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.zp410.selenium.testCase" />
+      <option name="MAIN_CLASS_NAME" value="com.zp410.selenium.testCase.testCourseList" />
+      <option name="METHOD_NAME" value="CourseList" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <list>
       <item itemvalue="TestNG./Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml" />
       <item itemvalue="Application.Login" />
       <item itemvalue="TestNG.login.getLoginHome" />
       <item itemvalue="TestNG.login.testLogin" />
       <item itemvalue="TestNG.loginTest.logininpage" />
+      <item itemvalue="TestNG.testCourseList.CourseList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.testCourseList.CourseList" />
         <item itemvalue="TestNG.login.testLogin" />
         <item itemvalue="TestNG.loginTest.logininpage" />
         <item itemvalue="TestNG.login.getLoginHome" />
@@ -409,52 +438,52 @@
       <workItem from="1533220252054" duration="2769000" />
       <workItem from="1533277641537" duration="28427000" />
       <workItem from="1533821288651" duration="1110000" />
-      <workItem from="1533864122097" duration="9763000" />
+      <workItem from="1533864122097" duration="14366000" />
+      <workItem from="1535118773144" duration="332000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zhangxianzhao_Documents_tester_seleniumDemo_testng_xml - 2018.08.09 at 22h 14m 00s.xml">
-      <configuration name="/Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 17h 50m 01s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="login_testLogin - 2018.08.10 at 10h 17m 11s.xml">
-      <configuration name="login.testLogin" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 17h 55m 08s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="login_testLogin - 2018.08.10 at 10h 19m 26s.xml">
-      <configuration name="login.testLogin" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 17m 42s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="login_testLogin - 2018.08.10 at 10h 49m 36s.xml">
-      <configuration name="login.testLogin" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 18m 36s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="login_testLogin - 2018.08.10 at 10h 50m 12s.xml">
-      <configuration name="login.testLogin" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 25m 55s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zhangxianzhao_Documents_tester_seleniumDemo_testng_xml - 2018.08.10 at 10h 52m 44s.xml">
-      <configuration name="/Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 26m 26s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zhangxianzhao_Documents_tester_seleniumDemo_testng_xml - 2018.08.10 at 10h 53m 14s.xml">
-      <configuration name="/Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 27m 08s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zhangxianzhao_Documents_tester_seleniumDemo_testng_xml - 2018.08.10 at 11h 01m 47s.xml">
-      <configuration name="/Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 32m 21s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zhangxianzhao_Documents_tester_seleniumDemo_testng_xml - 2018.08.10 at 11h 11m 39s.xml">
-      <configuration name="/Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 33m 11s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zhangxianzhao_Documents_tester_seleniumDemo_testng_xml - 2018.08.10 at 11h 14m 24s.xml">
-      <configuration name="/Users/zhangxianzhao/Documents/tester/seleniumDemo/testng.xml" configurationId="TestNG" />
+    <history-entry file="testCourseList_CourseList - 2018.08.16 at 18h 34m 11s.xml">
+      <configuration name="testCourseList.CourseList" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42069000" />
+    <option name="totallyTimeSpent" value="47004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32879376" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -462,7 +491,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" x="0" y="280" width="1440" height="339" id="Run" order="2" weight="0.39883268" />
+      <window_info anchor="bottom" x="0" y="280" width="1440" height="339" id="Run" order="2" weight="0.3985849" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -473,13 +502,14 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39883268" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3985849" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3278302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +525,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -667,13 +697,6 @@
     <entry file="file://$PROJECT_DIR$/test-output/failed.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
-          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/TestReport/overview-chart.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -681,13 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/TestReport/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -727,18 +743,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#229#230#0" expanded="true" />
             <element signature="e#278#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/base/DriverBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -805,11 +809,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/base/SelectDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="247">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -824,21 +835,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/testCourseList.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/base/DriverBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="817">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="20" />
           <folding>
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/login.java">
+    <entry file="file://$PROJECT_DIR$/test-output/TestReport/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zp410/selenium/testCase/testCourseList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1088#1096#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
